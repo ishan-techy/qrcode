@@ -185,7 +185,9 @@ a:active {
   flex-direction: row;
 }
 
-.linkStyle {
+.linkStyle,
+.linkStyle:visited,
+.linkStyle:active {
   text-decoration: none;
   color: black;
   cursor: pointer;
