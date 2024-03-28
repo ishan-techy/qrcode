@@ -192,3 +192,6 @@ a:active {
   color: black !important;
   cursor: pointer !important;
 }
+.MuiTypography-colorPrimary {
+  color: #000 !important;
+}
