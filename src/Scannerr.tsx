@@ -50,6 +50,12 @@ class Scannerr extends Component<object, State> {
       .catch((err) => console.error("Failed to copy: ", err));
   };
 
+  shareContent = () => {
+    navigator.share({
+      url: this.state.result,
+    });
+  };
+
   render() {
     const { open } = this.state;
 
@@ -186,7 +192,7 @@ class Scannerr extends Component<object, State> {
                   </Link>
                 </div>
                 <div className="cardLinks">
-                  <a href={this.state.result}>
+                  <Link onClick={this.shareContent}>
                     <ShareIcon
                       style={{
                         height: "25px",
@@ -205,7 +211,7 @@ class Scannerr extends Component<object, State> {
                       {" "}
                       Share
                     </Typography>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </Dialog>
