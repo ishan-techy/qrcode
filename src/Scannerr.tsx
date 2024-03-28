@@ -85,7 +85,10 @@ class Scannerr extends Component<object, State> {
                 <CloseIcon className="closeIcon" />
               </IconButton>
             </div>
-            <QRCode value={this.state.result} />
+            <QRCode
+              style={{ width: "30vh", height: "30vh" }}
+              value={this.state.result}
+            />
             <div className="linkQr">
               <PublicIcon />
               <p className="text"> {this.state.result}</p>
