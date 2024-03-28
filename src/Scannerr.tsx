@@ -170,7 +170,7 @@ class Scannerr extends Component<object, State> {
                   </a>
                 </div>
                 <div className="cardLinks">
-                  <Link onClick={this.copyText}>
+                  <Link className="linkStyle" onClick={this.copyText}>
                     <FileCopyIcon
                       style={{
                         height: "25px",
@@ -192,7 +192,7 @@ class Scannerr extends Component<object, State> {
                   </Link>
                 </div>
                 <div className="cardLinks">
-                  <Link onClick={this.shareContent}>
+                  <Link className="linkStyle" onClick={this.shareContent}>
                     <ShareIcon
                       style={{
                         height: "25px",

@@ -184,3 +184,9 @@ a:active {
   display: flex;
   flex-direction: row;
 }
+
+.linkStyle {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
