@@ -86,7 +86,7 @@ class Scannerr extends Component<object, State> {
               </IconButton>
             </div>
             <QRCode
-              style={{ width: "30vh", height: "30vh" }}
+              style={{ width: "25vh", height: "25vh" }}
               value={this.state.result}
             />
             <div className="linkQr">
