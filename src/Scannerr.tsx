@@ -151,7 +151,7 @@ class Scannerr extends Component<object, State> {
                   </Typography>
                 </div>
                 <div className="cardLinks">
-                  <a href={this.state.result}>
+                  <a href={this.state.result} target="_blank">
                     <LinkIcon
                       style={{
                         height: "25px",
